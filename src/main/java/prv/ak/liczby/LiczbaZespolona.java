@@ -32,9 +32,7 @@ public class LiczbaZespolona implements Liczba {
         return new LiczbaZespolona(re*a.re-im*a.im,im*a.re+re*a.im);
     }
 
-    public static LiczbaZespolona zero() {
-        return new LiczbaZespolona(0,0);
-    }
+    public final static LiczbaZespolona zero = new LiczbaZespolona(0,0);
 
     @Override
     public String toString() {

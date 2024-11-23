@@ -32,9 +32,7 @@ public class LiczbaWymierna implements Liczba {
         return new LiczbaWymierna(licznik*a.licznik, mianownik*a.mianownik);
     }
 
-    public static LiczbaWymierna zero() {
-        return new LiczbaWymierna(0,1);
-    }
+    public final static LiczbaWymierna zero = new LiczbaWymierna(0,1);
 
     @Override
     public String toString() {
